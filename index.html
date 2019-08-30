@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+    <title>Tiago's first ML App</title>
+  </head>
+
+  <body>
+    <div id=app1>
+      <h2 class="md-title">Real Time Image Classifier</h2>
+      
+      <div id="console"></div>
+      <!-- Add an image that we will use to test -->
+      <div id="video">
+        <video autoplay playsinline muted id="webcam" width="400" height="400"></video>
+      </div>
+
+      <div id="buttons">
+       <!-- add buttons -->
+        <button id="class-a">add A</button>
+        <button id="class-b">add B</button>
+        <button id="class-c">add C</button>
+        <button id="class-empty">Nothing</button>
+      </div>
+    </div>
+
+    <!-- Load index.js after the content of the page -->
+    <script src="index.js"></script>
+  </body>
+</html>
